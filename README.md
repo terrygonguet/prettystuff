@@ -5,4 +5,4 @@ An attempt to learn OpenGL, A-Frame (& three.js) and WebAssembly by making prett
 * `cd prettystuff`
 * `npm i`
 * `npm start`
-* [localhost](localhost)
+* [localhost](http://localhost)
