@@ -4,4 +4,5 @@ An attempt to learn OpenGL, A-Frame (& three.js) and WebAssembly by making prett
 * `git clone https://github.com/terrygonguet/prettystuff.git`
 * `cd prettystuff`
 * `npm i`
-* `npm start` 
+* `npm start`
+* [localhost](localhost)
