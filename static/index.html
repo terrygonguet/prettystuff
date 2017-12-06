@@ -1,9 +1,13 @@
 <html>
-  <head>
-    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-    </a-scene>
-  </body>
+<head>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-box id="test" src="red.png" rotation="35 0 45" position="0 1.5 -5" rotator></a-box>
+    <a-entity environment="preset: forest; numDressing: 500"></a-entity>
+  </a-scene>
+</body>
 </html>
