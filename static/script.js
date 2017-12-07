@@ -39,12 +39,12 @@ AFRAME.registerComponent('cloud', {
 });
 
 AFRAME.registerComponent('wires', {
-  schema: {},
+  schema: {type: 'string', default: "#FFF"},
   init: function () {
     var geometry = new THREE.BoxGeometry(1,1,1);
     var wireframe = new THREE.EdgesGeometry( geometry );
     var lineMaterial = new THREE.LineBasicMaterial({
-      color: "#F00",
+      color: this.data,
       linewidth: 4
     });
     var mesh = new THREE.LineSegments(wireframe, lineMaterial);
