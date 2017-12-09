@@ -7,7 +7,7 @@
 </head>
 <body>
   <a-scene>
-    <a-entity position="0 1.5 -3.5">
+    <a-entity position="0 1.5 -1.2">
       <a-entity homo-cloud="number:4000"></a-entity>
       <a-animation attribute="rotation"
                    from="0 0 0"
@@ -24,7 +24,7 @@
                    dur="100000"></a-animation>
     </a-entity>
 
-    <a-entity position="0 1.5 -3.5">
+    <a-entity position="0 1.5 -1.2">
       <a-entity homo-cloud="number:4000"></a-entity>
       <a-animation attribute="rotation"
                    from="360 360 360"
@@ -43,7 +43,7 @@
 
     <a-entity camera="userHeight: 1.5"></a-entity>
     <a-light type="ambient"></a-light>
-    <a-plane color="#111" position="0 1.5 -7" scale="50 50 50"></a-plane>
+    <a-sky color="#111"></a-sky>
   </a-scene>
   <script src="../base.js"></script>
 </body>
