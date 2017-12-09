@@ -3,7 +3,7 @@
     document.querySelector("a-scene").setAttribute("stats", "");
   }
 
-  if (getURLParameter("rmvr") === "false") {
+  if (getURLParameter("rmvr") !== "0") {
     // Remove VR button
     setTimeout(function () {
       document.querySelector(".a-enter-vr").remove();
@@ -16,6 +16,11 @@
     	return style.sheet;
     })();
     sheet.insertRule(".a-enter-vr {  display: none; }");
+  }
+
+  if(getURLParameter("allowctrl") === "1") {
+    document.querySelector("a-entity[camera]").setAttribute("look-controls", "");
+    document.querySelector("a-entity[camera]").setAttribute("wasd-controls", "");
   }
 })();
 function getURLParameter(name) {
